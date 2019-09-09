@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity
         Contact.OnContactFragmentInteractionListener, MailForm.OnMailFormFragmentInteractionListener,
         WebViewFragment.OnWebViewFragmentInteractionListener {
 
+    private static final String mailFormFragmentTag = "MAILFORM_FRAGMENT";
     private static final String webViewFragmentTag = "WEB_FRAGMENT";
     private boolean mBackPressedOnce;
     private Handler mHandler = new Handler();
@@ -77,12 +78,18 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        WebViewFragment fragment = (WebViewFragment) getSupportFragmentManager().findFragmentByTag(webViewFragmentTag);
+        WebViewFragment webViewFragment = (WebViewFragment) getSupportFragmentManager().findFragmentByTag(webViewFragmentTag);
+        MailForm mailForm = (MailForm) getSupportFragmentManager().findFragmentByTag(mailFormFragmentTag);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else if (fragment != null && fragment.isVisible()) {
-            fragment.webNavigation();
-        }  else {
+        } else if (webViewFragment != null && webViewFragment.isVisible()) {
+            webViewFragment.webNavigation();
+        }
+        else if (mailForm != null && mailForm.isVisible())
+        {
+            mailForm.onBackButtonPressed();
+        }
+        else {
             if (mBackPressedOnce) {
                 super.onBackPressed();
                 return;
@@ -249,7 +256,7 @@ public class MainActivity extends AppCompatActivity
     public void onMailButtonPressed() {
         MailForm fragment = new MailForm();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.frame, fragment);
+        fragmentTransaction.replace(R.id.frame, fragment, mailFormFragmentTag);
         //fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
@@ -292,6 +299,11 @@ public class MainActivity extends AppCompatActivity
     //WebViewFragment.OnWebViewFragmentInteractionListener
     @Override
     public void onWebViewFragmentBackButtonPressedFromHomeWebsite() {
+        showFragment(R.id.nav_contact);
+    }
+
+    @Override
+    public void onBackPressedFromMailForm() {
         showFragment(R.id.nav_contact);
     }
 }
