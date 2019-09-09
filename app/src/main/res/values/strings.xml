@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- General -->
+    <string name="app_name">ResumeAppV1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">@string/myName</string>
+    <string name="nav_header_subtitle">@string/myEmail</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="pressBackTwice">Press BACK again to exit app.</string>
+
+    <string name="myName">Debaleen Das Spandan</string>
+    <string name="myEmail">ddsmegh18@gmail.com</string>
+
+    <!--Labels-->
+    <string name="homeLabel">Home</string>
+    <string name="contactLabel">Contact</string>
+    <string name="skillsLabel">Skills</string>
+    <string name="projectsLabel">Projects</string>
+    <string name="mailFormLabel">Compose Mail</string>
+    <string name="webViewLabel">Blog</string>
+
+    <!-- Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_contact">Contact</string>
+    <string name="menu_skills">Skills</string>
+    <string name="menu_project">Project</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+    <!-- Home -->
+    <string name="myAbout">| Ambivert | Intuitive |\n| Sceptical | Die-hard coder |</string>
+    <string name="aboutMe"><u>About Me</u></string>
+
+    <string name="hackerrank_url"><a href="https://www.hackerrank.com/the_it_weirdo/">Find me on Hackerrank!</a></string>
+    <string name="facebook_url"><a href="https://www.facebook.com/the.it.weirdo/">Connect on Facebook.</a></string>
+    <string name="linkedin_url"><a href="https://www.linkedin.com/in/the-it-weirdo/">Get linked on LinkedIn.</a></string>
+    <string name="github_url"><a href="https://github.com/the-it-weirdo/">Check out my repositories on GitHub.</a></string>
+
+    <string name="school">Shishu Bihar H.S. School</string>
+    <string name="university">Bengal College of Engineering &amp; Technology</string>
+    <string name="home">Agartala, Tripura</string>
+    <string name="currentLocation">Durgapur, India</string>
+
+    <string name="coverDesc">CoverImg</string>
+    <string name="profileDesc">ProfileImg</string>
+
+    <string name="mailPrompt">Launch your favourite Email App</string>
+    <string name="mailSubjectString">Please mention your name and reason for contact in the subject.</string>
+
+    <string name="permissionToastCall">Please give permission to use call function.</string>
+
+    <!--Skills-->
+    <string-array name="toastStringsSkills">
+        <item>Java is my favourite OOP language.</item>
+        <item>I love programming in C.</item>
+        <item>I am a rookie in Python and Machine Learning.</item>
+        <item>Yay!! Android Studio.</item>
+    </string-array>
+
+    <!--Projects -->
+    <string-array name="projectsArray">
+        <item>Employee Management System using C</item>
+        <item>Text Encryptor using C</item>
+        <item>ARTO office information App for Android</item>
+        <item>Resume App for Android</item>
+        <item>Loan Predictor System using Machine Learning</item>
+    </string-array>
+
+    <string-array name="toastStringsProjects">
+        <item>This is my 1st ever project in Computer Science. I made this during my 1st year of my Bachelor degree.</item>
+        <item>This is a simple console program that encrypts a .txt file. Features include password protection.</item>
+        <item>This is my 1st project in Android. It shows the registration status of vehicles to users,</item>
+        <item>You are using this app. Hope you like it.</item>
+        <item>This is my 1st project in Machine Learning. This project implements 4 machine learning models to predict the outcome of
+        a loan status.</item>
+    </string-array>
+
+    <!--Contact-->
+    <string name="smsPrompt">Choose your favourite SMS app.</string>
+    <string name="blogLink">https://www.mindswindow.me</string>
+
+
+    <!--Mail Form-->
+    <string name="subjectTitle">Subject</string>
+    <string name="bodyTitle">Body</string>
+    <string name="subjectDefaultString">Enter your reason for contact here.</string>
+    <string name="bodyDefaultString">Mail body goes here.</string>
+    <string name="buttonText">Send Mail</string>
+    <string name="emptySubjectDialogTitle">Subject Field Empty.</string>
+    <string name="emptySubjectDialogMessage">Please mention your reason for contact in the subject field.</string>
+    <string name="emptyBodyDialogTitle">Body Field Empty.</string>
+    <string name="emptyBodyDialogMessage">Are you sure you want to leave an empty body ?</string>
+
+    <!--WebViewInteractionListener-->
+    <string name="noInternetTitle">No Internet</string>
+    <string name="noInternetMessage">Please connect your device to internet first.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="credits">
+        <item>Icons made by <a href="https://www.flaticon.com/authors/hanan" title="Hanan">Hanan</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></item>
+    </string-array>
+
+</resources>
