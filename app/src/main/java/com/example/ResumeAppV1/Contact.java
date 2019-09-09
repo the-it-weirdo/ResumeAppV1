@@ -1,4 +1,4 @@
-package com.example.kingominho;
+package com.example.ResumeAppV1;
 
 import android.app.AlertDialog;
 import android.content.Context;

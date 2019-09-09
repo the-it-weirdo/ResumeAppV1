@@ -8,7 +8,7 @@
     android:background="@color/black">
 
 
-    <com.example.kingominho.TypeWriter
+    <com.example.ResumeAppV1.TypeWriter
         android:id="@+id/typeWriter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,4 +1,4 @@
-package com.example.kingominho;
+package com.example.ResumeAppV1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
